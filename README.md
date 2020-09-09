@@ -2,7 +2,7 @@
 
 ## OS x
 
-- https://github.com/777bareman777/my-vim-setting/blob/master/install-vim-mac.sh
+- https://raw.githubusercontent.com/777bareman777/my-vim-setting/master/install-vim-mac.sh
 
 ```
 #!/bin/bash
