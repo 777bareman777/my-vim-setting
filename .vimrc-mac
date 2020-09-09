@@ -6,29 +6,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim' " vim 플러그인 관리 플러그인
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
-
 " All of your Plugins must be added before the following line
 Plugin 'vim-airline/vim-airline'                                  " Vim 사용자의 하단 상태바를 변경한다.
 Plugin 'airblade/vim-gitgutter'                                   " 기호 열에 git diff를 표시할 수 있는 플러그인
 Plugin 'scrooloose/syntastic'                                     " 각종 언어 문법 체크 해주는 플러그인
 Plugin 'scrooloose/nerdtree'                                      " 트리형태로 디렉터리를 보여주는 플러그인
 Plugin 'ctrlpvim/ctrlp.vim'                                       " vim내에서 파일을 쉽게 검색해서 해당 파일을 열게 해주는 플러그인
+Plugin 'tpope/vim-fugitive'                                       " branch of powerline
 
 call vundle#end()            " required
 
@@ -102,4 +86,3 @@ augroup markdown
     " set every new or read *.md buffer to use the markdown filetype
     autocmd BufRead,BufNew *.md setf markdown
 augroup END
-
