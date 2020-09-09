@@ -31,6 +31,11 @@ let g:ctrlp_custom_ignore = {
 " Tag List 환경설정
 filetype on                                 "vim filetype on
 
+" set UTF-8 encoding
+set enc=utf-8
+set fenc=utf-8
+set termencoding=utf-8
+
 "Source Explorer 환경설정
 nmap <C-H> <C-W>h               "왼쪽 창으로 이동
 nmap <C-J> <C-W>j               "아래 창으로 이동
