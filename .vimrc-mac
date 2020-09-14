@@ -1,20 +1,22 @@
 set nocompatible              " be iMproved, required
 
-filetype off                  " required
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim' " vim 플러그인 관리 플러그인
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
 
 " All of your Plugins must be added before the following line
-Plugin 'vim-airline/vim-airline'                                  " Vim 사용자의 하단 상태바를 변경한다.
-Plugin 'airblade/vim-gitgutter'                                   " 기호 열에 git diff를 표시할 수 있는 플러그인
-Plugin 'scrooloose/syntastic'                                     " 각종 언어 문법 체크 해주는 플러그인
-Plugin 'scrooloose/nerdtree'                                      " 트리형태로 디렉터리를 보여주는 플러그인
-Plugin 'ctrlpvim/ctrlp.vim'                                       " vim내에서 파일을 쉽게 검색해서 해당 파일을 열게 해주는 플러그인
-Plugin 'tpope/vim-fugitive'                                       " branch of powerline
+Plug 'vim-airline/vim-airline'              " Vim 사용자의 하단 상태바를 변경한다.
+Plug 'airblade/vim-gitgutter'               " 기호 열에 git diff를 표시할 수 있는 플러그인
+Plug 'scrooloose/syntastic'                 " 각종 언어 문법 체크 해주는 플러그인
+Plug 'scrooloose/nerdtree'
+Plug 'ctrlpvim/ctrlp.vim'                                       " vim내에서 파일을 쉽게 검색해서 해당 파일을 열게 해주는 플러그인
+Plug 'tpope/vim-fugitive'                                       " branch of powerline
 
-call vundle#end()            " required
+
+" Initialize plugin system
+call plug#end()
 
 
 "filetype plugin indent on    " required
@@ -41,6 +43,12 @@ nmap <C-H> <C-W>h               "왼쪽 창으로 이동
 nmap <C-J> <C-W>j               "아래 창으로 이동
 nmap <C-K> <C-W>k               "윗 창으로 이동
 nmap <C-L> <C-W>l               "오른쪽 창으로 이동
+
+" Vim내 파이썬 자동실행 단축키 설정
+imap <F5> <Esc>:w<CR>:!clear;python %<CR>
+nmap <F5> <Esc>:w<CR>:!clear;python %<CR>
+
+
 
 "세부 정보 출력
 set nu                          "줄 번호를 보여줌
@@ -72,7 +80,7 @@ set cursorline
 set ignorecase
 
 " 상태바 표시를 항상한다
-set laststatus=2 
+set laststatus=2
 set statusline=\ %<%l:%v\ [%P]%=%a\ %h%m%r\ %F\
 
 " OS 클립 보드와 VI register 공용해서 사용하기
