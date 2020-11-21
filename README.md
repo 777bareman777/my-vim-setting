@@ -7,10 +7,6 @@
 ```
 #!/bin/bash
 #
-
-#!/bin/bash
-#
-
 brew update
 brew install curl
 brew install global
