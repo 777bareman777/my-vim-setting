@@ -19,6 +19,8 @@ rm -rf my-vim-setting
 
 ## Ubuntu
 
+- https://raw.githubusercontent.com/777bareman777/my-vim-setting/master/install-vim-ubuntu.sh
+
 ```
 #!/bin/bash
 sudo apt-get update
