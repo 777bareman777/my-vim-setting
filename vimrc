@@ -1,4 +1,5 @@
 set nocompatible              " be iMproved, required
+filetype plugin indent on " required
 
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
