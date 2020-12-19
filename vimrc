@@ -11,8 +11,8 @@ Plug 'vim-airline/vim-airline'              " Vim 사용자의 하단 상태바�
 Plug 'airblade/vim-gitgutter'               " 기호 열에 git diff를 표시할 수 있는 플러그인
 Plug 'scrooloose/syntastic'                 " 각종 언어 문법 체크 해주는 플러그인
 Plug 'scrooloose/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'                                       " vim내에서 파일을 쉽게 검색해서 해당 파일을 열게 해주는 플러그인
-Plug 'tpope/vim-fugitive'                                       " branch of powerline
+Plug 'ctrlpvim/ctrlp.vim'                   " vim내에서 파일을 쉽게 검색해서 해당 파일을 열게 해주는 플러그인
+Plug 'tpope/vim-fugitive'                   " branch of powerline
 
 
 " Initialize plugin system
